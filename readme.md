@@ -1,6 +1,6 @@
 # My Zodiac Sign Is [![Build Status](https://travis-ci.org/cauealves/mzsi.svg?branch=master)](https://travis-ci.org/cauealves/mzsi)
 
-> Discover based on a date and know what their information, such as elements and behavioral characteristics.
+> Discover the zodiac sign and know what their information, such as elements and behavioral characteristics.
 
 > :aries: :taurus: :gemini: :cancer: :leo: :virgo: :libra: :scorpius: :sagittarius: :capricorn: :aquarius: :pisces:
 
