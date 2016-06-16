@@ -23,6 +23,8 @@ let day = 22,
 let sign = mzsi(month, day);
 
 console.log(sign.name); // Leo
+console.log(sign.symbol); // ♌
+console.log(sign.about.element); // Fire
 ```
 
 ## API
