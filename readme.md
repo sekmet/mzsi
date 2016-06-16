@@ -33,7 +33,7 @@ Returns an object with:
 
 - `name` *(string)* - The name of sign.
 - `symbol` *(unicode char)* - The representative symbol.
-- `about` *(object)* - The `about.json` object with the informations of sign.
+- `about` *(object)* - The informations of element and characteristics.
 
 
 ## License
