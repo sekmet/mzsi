@@ -34,10 +34,10 @@ module.exports = (month, day) => {
   } else if (day >= 22 && month === 12) {
     sign = 'Capricorn';
   }
-
+  
   return {
     name: sign,
-    symbol: require('./get-symbol')[sign.toLowerCase()],
+    symbol: require('./get-symbol')(sign.toLowerCase()),
     about: require('./about.json')[sign.toLowerCase()]
   };
 };
