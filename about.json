@@ -1,0 +1,38 @@
+{
+  "aquarius": {
+    "element": "Air"
+  },
+  "aries": {
+    "element": "Fire"
+  },
+  "cancer": {
+    "element": "Water"
+  },
+  "capricorn": {
+    "element": "Earth"
+  },
+  "gemini": {
+    "element": "Air"
+  },
+  "libra": {
+    "element": "Air"
+  },
+  "leo": {
+    "element": "Fire"
+  },
+  "pisces": {
+    "element": "Water"
+  },
+  "sagittarius": {
+    "element": "Fire"
+  },
+  "scorpio": {
+    "element": "Water"
+  },
+  "taurus": {
+    "element": "Earth"
+  },
+  "virgo": {
+    "element": "Earth"
+  }
+}

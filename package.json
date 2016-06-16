@@ -1,0 +1,38 @@
+{
+  "name": "mzsi",
+  "version": "1.0.0",
+  "description": "My zodiac sign is... Discover based on a date and know what their information, such as elements and behavioral characteristics.",
+  "license": "MIT",
+  "author": {
+    "name": "Cauê Alves",
+    "email": "cauealveseng@gmail.com",
+    "url": "cauealves.com"
+  },
+  "files": [
+    "index.js",
+    "get-symbol.js"
+  ],
+  "scripts": {
+    "test": "ava test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cauealves/mzsi.git"
+  },
+  "homepage": "https://github.com/cauealves/mzsi#readme",
+  "bugs": {
+    "url": "https://github.com/cauealves/mzsi/issues"
+  },
+  "keywords": [
+    "zodiac",
+    "sign",
+    "astrology",
+    "characteristics",
+    "elements",
+    "behavioral",
+    "discover"
+  ],
+  "devDependencies": {
+    "ava": "*"
+  }
+}
