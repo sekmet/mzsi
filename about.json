@@ -1,38 +1,86 @@
 {
   "aquarius": {
-    "element": "Air"
+    "element": "Air",
+    "keyworkds": {
+      "strength": ["witty", "clever", "humanitarian", "inventive", "original"],
+      "weakness": ["stubborn", "unemotional", "sarcastic", "rebellious", "aloof"]
+    }
   },
   "aries": {
-    "element": "Fire"
+    "element": "Fire",
+    "keyworkds": {
+      "strength": ["independent", "generous", "optimistic", "enthusiastic", "courageous"],
+      "weakness": ["moody", "short tempered", "self-involved", "impulsive", "impatient"]
+    }
   },
   "cancer": {
-    "element": "Water"
+    "element": "Water",
+    "keyworkds": {
+      "strength": ["loyalty", "dependable", "caring", "adaptable", "responsive"],
+      "weakness": ["moody", "clingy", "self-pitying", "oversensitive", "self-absorbed"]
+    }
   },
   "capricorn": {
-    "element": "Earth"
+    "element": "Earth",
+    "keyworkds": {
+      "strength": ["responsible", "patient", "ambitious", "resourceful", "loyal"],
+      "weakness": ["dictatorial", "inhibited", "conceited", "distrusting", "unimaginative"]
+    }
   },
   "gemini": {
-    "element": "Air"
+    "element": "Air",
+    "keyworkds": {
+      "strength": ["energetic", "clever", "imaginative", "witty", "adaptable"],
+      "weakness": ["superficial", "impulsive", "restless", "devious", "indecisive"]
+    }
   },
   "libra": {
-    "element": "Air"
+    "element": "Air",
+    "keyworkds": {
+      "strength": ["diplomatic", "graceful", "peaceful", "idealistic", "hospitable"],
+      "weakness": ["superficial", "vain", "indecisive", "unreliable"]
+    }
   },
   "leo": {
-    "element": "Fire"
+    "element": "Fire",
+    "keyworkds": {
+      "strength": ["confident", "ambitious", "generous", "loyal", "encouraging"],
+      "weakness": ["pretentious", "domineering", "melodramatic", "stubborn", "vain"]
+    }
   },
   "pisces": {
-    "element": "Water"
+    "element": "Water",
+    "keyworkds": {
+      "strength": ["compassionate", "adaptable", "accepting", "devoted", "imaginative"],
+      "weakness": ["oversensitive", "indecisive", "self-pitying", "lazy", "escapist"]
+    }
   },
   "sagittarius": {
-    "element": "Fire"
+    "element": "Fire",
+    "keyworkds": {
+      "strength": ["independence"],
+      "weakness": ["unemotional"]
+    }
   },
   "scorpio": {
-    "element": "Water"
+    "element": "Water",
+    "keyworkds": {
+      "strength": ["loyal", "passionate", "resourceful", "observant", "dynamic"],
+      "weakness": ["jealous", "obsessive", "suspicious", "manipulative", "unyielding"]
+    }
   },
   "taurus": {
-    "element": "Earth"
+    "element": "Earth",
+    "keyworkds": {
+      "strength": ["dependable", "persistent", "loyal", "patient", "generous"],
+      "weakness": ["stubborn", "laziness", "possessive", "materialistic", "self-indulging"]
+    }
   },
   "virgo": {
-    "element": "Earth"
+    "element": "Earth",
+    "keyworkds": {
+      "strength": ["analytical", "observant", "helpful", "reliable", "precise"],
+      "weakness": ["skeptical", "fussy", "inflexible", "cold", "interfering"]
+    }
   }
 }
