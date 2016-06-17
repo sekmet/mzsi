@@ -25,8 +25,8 @@ let sign = mzsi(month, day);
 console.log(sign.name); // Leo
 console.log(sign.symbol); // ♌
 console.log(sign.about.element); // Fire
-console.log(sign.about.strength); // ["confident", "ambitious", "generous", "loyal", "encouraging"]
-console.log(sign.about.weakness); // ["pretentious", "domineering", "melodramatic", "stubborn", "vain"]
+console.log(sign.about.keyworkds.strength); // ["confident", "ambitious", "generous", "loyal", "encouraging"]
+console.log(sign.about.keyworkds.weakness); // ["pretentious", "domineering", "melodramatic", "stubborn", "vain"]
 ```
 
 ## API
