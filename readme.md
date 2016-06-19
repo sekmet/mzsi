@@ -39,6 +39,8 @@ Returns an object with:
 - `symbol` *(unicode char)* - The representative symbol.
 - `about` *(object)* - The informations of element and characteristics.
 
+## Related
+- [mzsi-cli](https://github.com/cauealves/mzsi-cli) - CLI for this module.
 
 ## License
 
