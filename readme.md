@@ -1,4 +1,4 @@
-# My Zodiac Sign Is [![Build Status](https://travis-ci.org/cauealves/mzsi.svg?branch=master)](https://travis-ci.org/cauealves/mzsi) [![Dependency Status](https://david-dm.org/cauealves/mzsi.svg?style=flat-square)](https://david-dm.org/cauealves/mzsi) [![Npm Package Version](https://img.shields.io/npm/v/mzsi.svg?style=flat-square)](https://www.npmjs.org/package/mzsi)
+# My Zodiac Sign Is [![Build Status](https://travis-ci.org/ceasbz/mzsi.svg?branch=master)](https://travis-ci.org/ceasbz/mzsi) [![Dependency Status](https://david-dm.org/ceasbz/mzsi.svg?style=flat-square)](https://david-dm.org/ceasbz/mzsi) [![Npm Package Version](https://img.shields.io/npm/v/mzsi.svg?style=flat-square)](https://www.npmjs.org/package/mzsi)
 
 > Discover the zodiac sign and know what their information, such as elements and behavioral characteristics.
 
@@ -40,8 +40,8 @@ Returns an object with:
 - `about` *(object)* - The informations of element and characteristics.
 
 ## Related
-- [mzsi-cli](https://github.com/cauealves/mzsi-cli) - CLI for this module.
+- [mzsi-cli](https://github.com/ceasbz/mzsi-cli) - CLI for this module.
 
 ## License
 
-MIT © [Cauê Alves](http://cauealves.com)
+MIT © [Cauê Alves](./LICENSE)
