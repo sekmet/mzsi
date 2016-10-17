@@ -25,19 +25,22 @@ let sign = mzsi(month, day);
 console.log(sign.name); // Leo
 console.log(sign.symbol); // ♌
 console.log(sign.about.element); // Fire
-console.log(sign.about.keyworkds.strength); // ["confident", "ambitious", "generous", "loyal", "encouraging"]
-console.log(sign.about.keyworkds.weakness); // ["pretentious", "domineering", "melodramatic", "stubborn", "vain"]
+console.log(sign.about.keywords.strength); // ["confident", "ambitious", "generous", "loyal", "encouraging"]
+console.log(sign.about.keywords.weakness); // ["pretentious", "domineering", "melodramatic", "stubborn", "vain"]
 ```
 
 ## API
 
-### mzsi(month, day)
+### mzsi(month, day, language)
 
 Returns an object with:
 
 - `name` *(string)* - The name of sign.
 - `symbol` *(unicode char)* - The representative symbol.
 - `about` *(object)* - The informations of element and characteristics.
+
+
+Currently, the mzsi has translate with two languages ['en-us', 'pt-br']. You can choose via `language` parameter.
 
 ## Related
 - [mzsi-cli](https://github.com/ceasbz/mzsi-cli) - CLI for this module.

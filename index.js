@@ -1,43 +1,119 @@
-module.exports = (month, day) => {
+
+module.exports = (month, day, languageCode) => {
   'use strict';
 
-  if (typeof month !== 'number' || typeof day !== 'number') {
-    console.error('You should inform the day and month of birth date.');
+  const monthTypeOf = typeof month;
+
+  if (monthTypeOf !== 'number') {
+    throw new TypeError('The month should be a number');
   }
 
-  let sign;
+  const dayTypeOf = typeof day;
 
-  if (day <= 19 && month === 1) {
-    sign = 'Capricorn';
-  } else if ((day >= 20 && month === 1) || (day <= 18 && month === 2)) {
-    sign = 'Aquarius';
-  } else if ((day >= 19 && month === 2) || (day <= 20 && month === 3)) {
-    sign = 'Pisces';
-  } else if ((day >= 21 && month === 3) || (day <= 19 && month === 4)) {
-    sign = 'Aries';
-  } else if ((day >= 20 && month === 4) || (day <= 20 && month === 5)) {
-    sign = 'Taurus';
-  } else if ((day >= 21 && month === 5) || (day <= 20 && month === 6)) {
-    sign = 'Gemini';
-  } else if ((day >= 21 && month === 6) || (day <= 21 && month === 7)) {
-    sign = 'Cancer';
-  } else if ((day >= 22 && month === 7) || (day <= 22 && month === 8)) {
-    sign = 'Leo';
-  } else if ((day >= 23 && month === 8) || (day <= 22 && month === 9)) {
-    sign = 'Virgo';
-  } else if ((day >= 23 && month === 9) || (day <= 22 && month === 10)) {
-    sign = 'Libra';
-  } else if ((day >= 23 && month === 10) || (day <= 21 && month === 11)) {
-    sign = 'Scorpio';
-  } else if ((day >= 22 && month === 11) || (day <= 21 && month === 12)) {
-    sign = 'Sagittarius';
-  } else if (day >= 22 && month === 12) {
-    sign = 'Capricorn';
+  if (dayTypeOf !== 'number') {
+    throw new TypeError('The day should be a number');
   }
-  
+
+  const possibilities = [
+    {
+      id: 1,
+      name: 'aquarius',
+      begin: [20, 1],
+      end: [18, 2]
+    },
+    {
+      id: 2,
+      name: 'pisces',
+      begin: [19, 2],
+      end: [20, 3]
+    },
+    {
+      id: 3,
+      name: 'aries',
+      begin: [21, 3],
+      end: [19, 4]
+    },
+    {
+      id: 4,
+      name: 'taurus',
+      begin: [20, 4],
+      end: [20, 5]
+    },
+    {
+      id: 5,
+      name: 'gemini',
+      begin: [21, 5],
+      end: [20, 6]
+    },
+    {
+      id: 6,
+      name: 'cancer',
+      begin: [21, 6],
+      end: [21, 7]
+    },
+    {
+      id: 7,
+      name: 'leo',
+      begin: [22, 7],
+      end: [22, 8]
+    },
+    {
+      id: 8,
+      name: 'virgo',
+      begin: [23, 8],
+      end: [22, 9]
+    },
+    {
+      id: 9,
+      name: 'libra',
+      begin: [23, 9],
+      end: [22, 10]
+    },
+    {
+      id: 10,
+      name: 'scorpio',
+      begin: [23, 10],
+      end: [21, 11]
+    },
+    {
+      id: 11,
+      name: 'sagittarius',
+      begin: [22, 11],
+      end: [21, 12]
+    },
+    {
+      id: 12,
+      name: 'capricorn',
+      begin: [22, 12],
+      end: [19, 1]
+    }
+  ];
+
+  const sign = possibilities.filter(sign => {
+    const itIsAmongTheBeginning = (day >= sign.begin[0] && month === sign.begin[1]);
+    const itIsAmongTheEnd = (day <= sign.end[0] && month === sign.end[1]);
+
+    return (itIsAmongTheBeginning || itIsAmongTheEnd);
+  });
+
+  const translatedLanguages = ['en-us', 'pt-br'];
+
+  let languageToDisplay = 'en-us';
+
+  if (translatedLanguages.indexOf(languageCode) > -1) {
+    languageToDisplay = languageCode;
+  }
+
+  const aboutSign = JSON.parse(
+      require('fs').readFileSync(
+          require('path').resolve(__dirname, `i18n/${languageToDisplay}-about.json`),
+          'utf8'
+      )
+  )[sign[0].id];
+
   return {
-    name: sign,
-    symbol: require('./get-symbol')(sign.toLowerCase()),
-    about: require('./about.json')[sign.toLowerCase()]
+    name: aboutSign.name,
+    symbol: require('./get-symbol')(sign[0].id),
+    about: aboutSign
   };
 };
