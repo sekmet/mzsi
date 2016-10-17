@@ -40,7 +40,7 @@ Returns an object with:
 - `about` *(object)* - The informations of element and characteristics.
 
 
-Currently, the mzsi has translate with two languages ['en-us', 'pt-br']. You can choose via `language` parameter.
+Currently, the mzsi has translate with two languages (pt-br, es-us). You can choose via `language` parameter.
 
 ## Related
 - [mzsi-cli](https://github.com/ceasbz/mzsi-cli) - CLI for this module.
