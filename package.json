@@ -11,7 +11,8 @@
   "files": [
     "index.js",
     "get-symbol.js",
-    "about.json"
+    "i18n/en-us-about.json",
+    "i18n/pt-br-about.json"
   ],
   "scripts": {
     "test": "ava test.js"
@@ -34,6 +35,6 @@
     "discover"
   ],
   "devDependencies": {
-    "ava": "*"
+    "ava": "0.16.0"
   }
 }
