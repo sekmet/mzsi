@@ -84,7 +84,7 @@ module.exports = (month, day, languageCode) => {
     return (itIsAmongTheBeginning || itIsAmongTheEnd);
   });
 
-  const translatedLanguages = ['en-us', 'pt-br'];
+  const translatedLanguages = ['en-us', 'pt-br', 'zh-cn'];
 
   let languageToDisplay = 'en-us';
 
