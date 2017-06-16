@@ -76,3 +76,18 @@ test('should return the correct name when language is pt-br', t => {
   t.is(mzsi(11, 22, 'pt-br').name, 'Sagitário');
   t.is(mzsi(12, 22, 'pt-br').name, 'Capricórnio');
 });
+
+test('should return the correct name when language is zh-cn', t => {
+  t.is(mzsi(1, 20, 'zh-cn').name, '水瓶');
+  t.is(mzsi(2, 19, 'zh-cn').name, '双鱼');
+  t.is(mzsi(3, 21, 'zh-cn').name, '白羊');
+  t.is(mzsi(4, 20, 'zh-cn').name, '金牛');
+  t.is(mzsi(6, 20, 'zh-cn').name, '双子');
+  t.is(mzsi(7, 20, 'zh-cn').name, '巨蟹');
+  t.is(mzsi(7, 23, 'zh-cn').name, '狮子');
+  t.is(mzsi(8, 23, 'zh-cn').name, '处女');
+  t.is(mzsi(9, 23, 'zh-cn').name, '天秤');
+  t.is(mzsi(10, 23, 'zh-cn').name, '天蝎');
+  t.is(mzsi(11, 22, 'zh-cn').name, '射手');
+  t.is(mzsi(12, 22, 'zh-cn').name, '摩羯');
+});
