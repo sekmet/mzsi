@@ -1,6 +1,6 @@
 {
   "name": "mzsi",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "My zodiac sign is... Discover based on a date and know what their information, such as elements and behavioral characteristics.",
   "license": "MIT",
   "author": {
@@ -12,7 +12,8 @@
     "index.js",
     "get-symbol.js",
     "i18n/en-us-about.json",
-    "i18n/pt-br-about.json"
+    "i18n/pt-br-about.json",
+    "i18n/zh-cn-about.json"
   ],
   "scripts": {
     "test": "ava test.js"
