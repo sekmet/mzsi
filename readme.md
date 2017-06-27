@@ -17,10 +17,10 @@ $ npm i mzsi --save
 ```js
 import mzsi from 'mzsi';
 
-let day = 22,
-    month = 8;
+const day = 22,
+      month = 8;
     
-let sign = mzsi(month, day);
+const sign = mzsi(month, day);
 
 console.log(sign.name); // Leo
 console.log(sign.symbol); // ♌
