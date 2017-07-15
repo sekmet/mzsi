@@ -1,4 +1,4 @@
-# My Zodiac Sign Is [![Build Status](https://travis-ci.org/ceasbz/mzsi.svg?branch=master)](https://travis-ci.org/ceasbz/mzsi) [![Dependency Status](https://david-dm.org/ceasbz/mzsi.svg?style=flat-square)](https://david-dm.org/ceasbz/mzsi) [![Npm Package Version](https://img.shields.io/npm/v/mzsi.svg?style=flat-square)](https://www.npmjs.org/package/mzsi) [![codecov](https://codecov.io/gh/ceasbz/mzsi/branch/master/graph/badge.svg)](https://codecov.io/gh/ceasbz/mzsi)
+# My Zodiac Sign Is [![Build Status](https://travis-ci.org/ceasbz/mzsi.svg?branch=master)](https://travis-ci.org/ceasbz/mzsi) [![Dependency Status](https://david-dm.org/ceasbz/mzsi.svg?style=flat-square)](https://david-dm.org/ceasbz/mzsi) [![Npm Package Version](https://img.shields.io/npm/v/mzsi.svg?style=flat-square)](https://www.npmjs.org/package/mzsi)
 
 > Discover the zodiac sign and know what their information, such as elements and behavioral characteristics.
 
@@ -7,18 +7,16 @@
 <br />
 
 ## Install 
-
-Via [Node.js](https://nodejs.org) run the following:
 ```bash
-$ npm i mzsi --save
+$ yarn add mzsi
 ```
 
 ## Usage
 ```js
 import mzsi from 'mzsi';
 
-const day = 22,
-      month = 8;
+const day = 22
+    , month = 8;
     
 const sign = mzsi(month, day);
 
@@ -47,4 +45,4 @@ Currently, the mzsi has translate with two languages (pt-br, en-us). You can cho
 
 ## License
 
-MIT © [Cauê Alves](./LICENSE)
+MIT © [Cauê Alves](https://twitter.com/ceasbz)
